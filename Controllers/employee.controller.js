@@ -4,18 +4,16 @@ export const createEmployee = async (req, res) => {
   try {
     const newEmployee = new Employee(req.body);
     await newEmployee.save();
-    res
-      .status(200)
-      .json({ message: "emp added successfully", data: newEmployee });
+    res.status(200).json({ message: "emp added successfully", data: newEmployee });
   } catch (error) {
     console.log(error);
   }
 };
-export const getEmployeedetail = async (req, res) => {
+export const getEmployeeDetail = async (req, res) => {
 
   try {
-    const employee = await Employee.find()
-    res.status(200).json({ messege:"Data fetched successfully",data:employee });
+    const employee = await Employee.find();
+    res.status(200).json({messege:"Data fetched successfully",data:employee});
   } catch (error) {
     console.log(error);
   }
