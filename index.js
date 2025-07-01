@@ -12,7 +12,7 @@ const PORT=4000;
 connectDB();
 const port=process.env.PORT;
 
-app.use('/api',empRouter)
+app.use('/peter',empRouter)
 
 
 
