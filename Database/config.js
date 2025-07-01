@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv'
 dotenv.config()
 
-const mongoDBConnectionString=process.env.MONGODBCONNECTIONSTRING;
+// const mongoDBConnectionString=process.env.MONGODBCONNECTIONSTRING;
 
 const connectDB=async()=>{
 
