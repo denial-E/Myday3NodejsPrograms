@@ -4,7 +4,7 @@ dotenv.config()
 
 // const mongoDBConnectionString=process.env.MONGODBCONNECTIONSTRING;
 
-const connectDB=async()=>{
+const connectDB =async()=>{
 
     try {
         // console.log("connection string",mongoDBConnectionString);

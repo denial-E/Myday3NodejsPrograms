@@ -9,7 +9,7 @@ const app=express()
 app.use(cors())
 app.use(express.json())
 const PORT=4000;
-connectDB()
+connectDB();
 const port=process.env.PORT;
 
 app.use('/api',empRouter)
