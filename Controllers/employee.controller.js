@@ -12,9 +12,10 @@ export const createEmployee = async (req, res) => {
   }
 };
 export const getEmployeedetail = async (req, res) => {
+
   try {
-    const employee = await Employee.find();
-    res.status(200).json({ data: employee });
+    const employee = await Employee.find()
+    res.status(200).json({ messege:"Data fetched successfully",data:employee });
   } catch (error) {
     console.log(error);
   }
